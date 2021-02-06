@@ -6,7 +6,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
-    color: #222222;
+    color: #fff;
     background-color: #7c00ec;
 }
 
@@ -17,7 +17,7 @@ img{
 
 a{
     text-decoration: none;
-    color: #000;
+    color: #FFF;
 }
 
 /* -- ナビ -- */
@@ -39,8 +39,9 @@ a{
     font-size: 2.1rem;
     text-transform: uppercase;
     padding: 50px 0;
-    color: #000;;
+    color: #fff;;
     font-weight: bold;
+    /* background-color: #000; */
 }
 
 .nav-list li{
@@ -412,9 +413,22 @@ a{
 
 /* -- Access -- */
 
+.mama-cont{
+    width: 100%;
+}
+
+.menu{
+    width: 800px;
+    display: flex;
+    margin: 0 auto;
+}
+.space{
+    width: 100px;
+}
+
 .access-frame{
     padding: 60px 0;
-    background-color: #f2f2f2;
+    background-color: #000;
 
 }
 .access-content{
@@ -571,7 +585,7 @@ input[type*="checkbox"]:checked{
 
 .footer{
     padding: 30px;
-    background-color: black;
+    /* background-color: black; */
 }
 
 /* -- Footer -- */
