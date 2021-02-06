@@ -7,7 +7,7 @@ $position = $_POST["position"];
 
 $db = connectDB();
 
-$stmt = $db->prepare('INSERT INTO user_table(id, name, pass, position)VALUES(NULL,:name,:pass,:position)');
+$stmt = $db->prepare('INSERT INTO user_table(id, name, pass, position, login)VALUES(NULL,:name,:pass,:position,login=0)');
 $stmt->bindValue(':name', $name, PDO::PARAM_STR);
 $stmt->bindValue(':pass', $pass, PDO::PARAM_STR);
 $stmt->bindValue(':position', $position, PDO::PARAM_STR);

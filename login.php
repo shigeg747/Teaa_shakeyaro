@@ -30,6 +30,14 @@ if ($status == false) {
         echo 'とうろくなし';
         echo '<a href="loginForm.php">ログイン画面へ</a>';
     } else {
-        redirect('kakunin.php');
+        $stmt2 = $db->prepare('UPDATE user_table SET login=1 WHERE name=:name');
+        $stmt2->bindValue(':name', $name, PDO::PARAM_STR);
+        $status2 = $stmt2->execute();
+
+        if ($status2 == false) {
+            sql_error($stmt2);
+        } else {
+            redirect('video.php');
+        }
     }
 }
