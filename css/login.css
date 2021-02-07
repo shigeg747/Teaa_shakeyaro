@@ -1,0 +1,30 @@
+body {
+  width: 100%;
+  text-align: center;
+  background-image: url(../img/M_ces05.jpg);
+  background-size: cover;
+}
+
+.loginForm {
+  padding-top: 245px;
+  opacity: 0.8;
+}
+
+header h1 {
+  padding-top: 55px;
+}
+
+form {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: auto;
+  width: 500px;
+  padding: 50px 0;
+  background-color: whitesmoke;
+}
+
+table {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+}
