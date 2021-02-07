@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
     <header>
         <h1>ログイン</h1>
     </header>
-    <div>
+    <div class="loginForm">
         <form action="login.php" method="post" name="login">
             <table>
                 <tbody>
@@ -29,7 +30,7 @@
             </table>
             <input type="submit" value="login" onclick="return checkForm();">
         </form>
-    </div><br><br><br><br><br><br>
+    </div><br><br>
     <button><a href="userSave.php">新規登録</a></button>
     <script>
         function checkForm() {

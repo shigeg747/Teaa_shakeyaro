@@ -1,3 +1,10 @@
+<?php
+require_once('funcs.php');
+session_start();
+
+$userName = $_SESSION['user'];
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -43,10 +50,17 @@
       <button id="messages-nav-close">Chat Close</button>
     </nav> -->
     </div>
+
+    <!-- ログインしている人の名前表示 -->
+    <div class="userName">
+      <?= $userName ?>
+    </div>
+
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
   <script src="js/config.js"></script>
   <script src="js/video.js"></script>
 </body>
+
 </html>
